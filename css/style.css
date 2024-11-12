@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background image */
+body, html {
+    height: 100%;
+    
+}
+
+.navbar {
+    width: auto;
+    background: #6B3CC9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Adjust button appearance */
+button {
+    border-radius: 10px;
+    background-color: #ffa200;
+    color: aliceblue;
+    border-color: #ffa200;
+}
+
+/* Accordion icons */
+.accordion-button::after {
+    background-image: url('../img/plus.png');
+    width: 20px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    align-items: flex-end;
+    margin-right: 10%;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: url('../img/minus.png');
+    width: 20px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    align-items: flex-end;
+    margin-right: 10%;
+}
+
+footer {
+    background-color: #6B3CC9; 
+    color: white; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 769px) {
+
+    .background-section{
+        position: relative;
+        /* height: 600px !important; */
+        /* background-size: contain !important; */
+    }
+    .background-outer{
+        padding: unset !important;
+        bottom: -98px;
+        position: absolute;
+        margin-bottom: 10px;
+    }
+    .card-cover{
+        width: unset !important;
+    }
+    .card{
+        width: 100% !important;
+    }
+
+    .col-md-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .col-md-6 p {
+        margin: 0;
+    }
+
+    .col-md-6 .btn {
+        margin-top: 10px;
+    }
+
+    footer .row > .col-12 > .row {
+        display: flex;
+        flex-direction: column;
+    
+    
+        
+    }
+
+    
+    footer .col-md-4:first-child {
+        width: 100%;
+        margin-bottom: 20px; 
+        
+    }
+
+   
+    footer .col-md-4:nth-child(2),
+    footer .col-md-4:nth-child(3) {
+        width: 45%; 
+        margin-bottom: 10px; 
+        
+        
+        
+    }
+
+   
+    footer .row.text-center {
+        margin-top: 20px;
+    }
+
+    
+}
+
+@media (max-width: 769px) {
+    .my-5 .customimg {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-5 .customtext {
+        order: 2;
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px) {
+    footer .col-md-4 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /* Adjusts the row containing "Privacy Policy | Terms and conditions" */
+    footer .row.text-center p {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .background-section{
+        height: 450px;
+    }
+}
+
+
+
+
